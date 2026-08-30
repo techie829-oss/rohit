@@ -14,13 +14,13 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="@yield('title', 'Rohit Kumar (Coolhax RK) - Full Stack Lead & Tech Founder')">
     <meta property="og:description" content="@yield('meta_description', 'Backend Developer Lead @ FinCrif India, Founder @ Solidrix Solutions, Former CTO @ GullySystem. 5+ Years in Full Stack Engineering & Cloud DevOps.')">
-    <meta property="og:image" content="{{ asset('assets/img/rohit.jpeg') }}">
+    <meta property="og:image" content="{{ asset('assets/img/og-banner.png') }}">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="@yield('title', 'Rohit Kumar (Coolhax RK) - Full Stack Lead & Tech Founder')">
     <meta name="twitter:description" content="@yield('meta_description', 'Backend Developer Lead @ FinCrif India, Founder @ Solidrix Solutions, Former CTO @ GullySystem. 5+ Years in Full Stack Engineering & Cloud DevOps.')">
-    <meta name="twitter:image" content="{{ asset('assets/img/rohit.jpeg') }}">
+    <meta name="twitter:image" content="{{ asset('assets/img/og-banner.png') }}">
 
     <!-- Structured Data JSON-LD -->
     @verbatim
@@ -52,7 +52,8 @@
     @endverbatim
 
     <!-- fav logo -->
-    <link rel="shortcut icon" href="{{ asset('assets/img/rohit.jpeg') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('assets/img/favicon.png') }}" type="image/png">
+    <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <!-- magnific-popup css -->

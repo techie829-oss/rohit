@@ -835,38 +835,70 @@
                         <div class="th-contact-main-wrap-3">
                             <div class="row">
                                 <div class="col-xl-6 col-lg-6" data-aos="fade-right">
-                                    <div class="th-contact-maps-wrap">
+                                    <div class="th-contact-maps-wrap h-100 rounded-4 overflow-hidden shadow">
                                         <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.0444158046!2d-118.74138745752992!3d34.020608405863136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1771764657420!5m2!1sen!2sbd"
-                                            class="th-map"></iframe>
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14132.836814917409!2d80.924911!3d27.8953989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3998cf262569147f%3A0x9146ec89a72dfc73!2sSolidrix%20Technologies!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+                                            class="th-map w-100 h-100" style="min-height: 480px; border: 0;" allowfullscreen="" loading="lazy"></iframe>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6">
-                                    <div class="th-contact-wrap" data-aos="fade-left">
-                                        <h3 class="th-contact-title">Get in Touch</h3>
-                                        <div class="row">
-                                            <div class="col-xl-6 mb-16">
-                                                <label>Name</label>
-                                                <input type="text" placeholder="Enter your name">
+                                    <div class="th-contact-wrap p-4 p-md-5 rounded-4 shadow-sm" data-aos="fade-left" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,123,0,0.3);">
+                                        <h3 class="th-contact-title fs-3 fw-bold text-white mb-4">Send a Direct Message</h3>
+
+                                        @if(session('success'))
+                                            <div class="alert alert-success alert-dismissible fade show mb-4 rounded-3" role="alert">
+                                                <i class="fa-solid fa-circle-check me-2"></i> {{ session('success') }}
+                                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                             </div>
-                                            <div class="col-xl-6 mb-16">
-                                                <label>Email</label>
-                                                <input type="email" placeholder="Enter your email">
+                                        @endif
+
+                                        @if($errors->any())
+                                            <div class="alert alert-danger alert-dismissible fade show mb-4 rounded-3" role="alert">
+                                                <ul class="mb-0 ps-3">
+                                                    @foreach($errors->all() as $error)
+                                                        <li>{{ $error }}</li>
+                                                    @endforeach
+                                                </ul>
                                             </div>
-                                            <div class="col-xl-12 mb-16">
-                                                <label>Message</label>
-                                                <textarea name="message" id="message"
-                                                    placeholder="Type your message"></textarea>
+                                        @endif
+
+                                        <form action="{{ route('contact.submit') }}" method="POST">
+                                            @csrf
+                                            {{-- Anti-bot honeypot field --}}
+                                            <div style="display: none !important;" aria-hidden="true">
+                                                <input type="text" name="website_url" tabindex="-1" autocomplete="off">
                                             </div>
 
-                                            <div class="col-xl-12">
-                                                <a href="#" class="w-100 text-center th-primary-btn th-primary-btn-3">
-                                                    <span class="th-icon"><img
-                                                            src="{{ asset('assets/img/icon/th-up-arrow-wh-3.1.png') }}" alt=""></span>
-                                                    <span class="th-text">DOWNLOAD CV</span>
-                                                </a>
+                                            <div class="row">
+                                                <div class="col-xl-6 col-md-6 mb-3">
+                                                    <label class="form-label text-light fw-bold">Your Name <span class="text-danger">*</span></label>
+                                                    <input type="text" name="name" class="form-control bg-dark text-white border-secondary p-3 rounded-3" placeholder="Enter your name" value="{{ old('name') }}" required>
+                                                </div>
+                                                <div class="col-xl-6 col-md-6 mb-3">
+                                                    <label class="form-label text-light fw-bold">Your Email <span class="text-danger">*</span></label>
+                                                    <input type="email" name="email" class="form-control bg-dark text-white border-secondary p-3 rounded-3" placeholder="Enter your email" value="{{ old('email') }}" required>
+                                                </div>
+                                                <div class="col-xl-6 col-md-6 mb-3">
+                                                    <label class="form-label text-light fw-bold">Phone Number</label>
+                                                    <input type="text" name="phone" class="form-control bg-dark text-white border-secondary p-3 rounded-3" placeholder="+91-7007420572" value="{{ old('phone') }}">
+                                                </div>
+                                                <div class="col-xl-6 col-md-6 mb-3">
+                                                    <label class="form-label text-light fw-bold">Subject</label>
+                                                    <input type="text" name="subject" class="form-control bg-dark text-white border-secondary p-3 rounded-3" placeholder="Project Inquiry" value="{{ old('subject') }}">
+                                                </div>
+                                                <div class="col-xl-12 mb-4">
+                                                    <label class="form-label text-light fw-bold">Message <span class="text-danger">*</span></label>
+                                                    <textarea name="message" id="home_message" rows="4" class="form-control bg-dark text-white border-secondary p-3 rounded-3" placeholder="Type your project details..." required>{{ old('message') }}</textarea>
+                                                </div>
+
+                                                <div class="col-xl-12">
+                                                    <button type="submit" class="w-100 border-0 th-primary-btn th-primary-btn-3">
+                                                        <span class="th-icon"><img src="{{ asset('assets/img/icon/th-up-arrow-wh-3.1.png') }}" alt=""></span>
+                                                        <span class="th-text">SUBMIT INQUIRY</span>
+                                                    </button>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>

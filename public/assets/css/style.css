@@ -130,7 +130,7 @@
 /*----------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&display=swap");
 :root {
-  --primary-color:#DEFF00;
+  --primary-color:#FF7B00;
   --secondary-color: #FBFBFB;
   --text-color: #B4B2B2;
   --accent-color: #1E84B5;
@@ -171,7 +171,7 @@
 }
 .vl-faqs3 .vl-accordion-item .vl-accordion-button.collapsed {
   background: #0E0E0E;
-  border: 1px solid #DEFF00;
+  border: 1px solid #FF7B00;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.09);
@@ -216,7 +216,7 @@
   width: 40px;
   line-height: 45px;
   transform: rotate(45deg);
-  background: #DEFF00;
+  background: #FF7B00;
   color: #0E0E0E;
 }
 @media (max-width: 575px) {
@@ -248,7 +248,7 @@
   /* only active item border */
 }
 .vl-faqs3 .vl-accordion-item:has(.accordion-collapse.show) {
-  border: 1px solid #DEFF00;
+  border: 1px solid #FF7B00;
   border-radius: 8px;
 }
 
@@ -2300,7 +2300,7 @@ h5.preloader-text::after {
   }
 }
 .th-service-icnbox-title:hover {
-  color: #DEFF00;
+  color: #FF7B00;
   transition: 0.3s;
 }
 .th-service-icnbox-para {
@@ -2311,7 +2311,7 @@ h5.preloader-text::after {
   padding-bottom: 32px;
 }
 .th-service-icnbox:hover {
-  border: 1px solid #DEFF00;
+  border: 1px solid #FF7B00;
   transition: 0.3s;
 }
 
@@ -2338,7 +2338,7 @@ h5.preloader-text::after {
 }
 
 .th-service-icnbox:hover .th-service-icnbox-icon span {
-  background: #DEFF00;
+  background: #FF7B00;
   transition: 0.3s;
 }
 .th-service-icnbox:hover .th-service-icnbox-icon span img {
@@ -2346,7 +2346,7 @@ h5.preloader-text::after {
   transition: 0.3s;
 }
 .th-service-icnbox:hover .th-service-arrow-icon .th-arrow-bg {
-  background: #DEFF00;
+  background: #FF7B00;
   transition: 0.3s;
 }
 .th-service-icnbox:hover .th-service-arrow-icon .th-arrow-bg img {
@@ -2689,7 +2689,7 @@ h5.preloader-text::after {
   transition: 0.3s;
 }
 .th-theme-pagination ul li a.th-pagination-num:hover {
-  background: #DEFF00;
+  background: #FF7B00;
   color: #0E0E0E;
   transition: 0.3s;
 }
@@ -2707,7 +2707,7 @@ h5.preloader-text::after {
   margin-top: -4px;
 }
 .th-theme-pagination ul li a .th-prev:hover {
-  background: #DEFF00;
+  background: #FF7B00;
   transition: 0.3s;
   color: #0E0E0E;
 }
@@ -2744,12 +2744,12 @@ h5.preloader-text::after {
   left: 0;
   bottom: 0;
   border-radius: 64px;
-  background: #DEFF00;
+  background: #FF7B00;
 }
 
 .reply-btn {
   display: inline-block;
-  background: #DEFF00;
+  background: #FF7B00;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
@@ -2763,7 +2763,7 @@ h5.preloader-text::after {
   background: #121212;
 }
 .reply-btn-2:hover {
-  color: #DEFF00;
+  color: #FF7B00;
 }
 
 .th-coment-date-flex {
@@ -7298,7 +7298,7 @@ p {
   margin-top: -4px;
 }
 .th-blog-wrap-iner-content .th-blog-meta a:hover {
-  color: #DEFF00;
+  color: #FF7B00;
   transition: 0.3s;
 }
 .th-blog-wrap-iner-content .th-blog-meta .th-slash {
@@ -7314,18 +7314,18 @@ p {
   transition: 0.3s;
 }
 .th-blog-wrap-iner-content .th-title:hover {
-  color: #DEFF00;
+  color: #FF7B00;
   transition: 0.3s;
 }
 
 .th-blog-iner-btn:hover .th-service-arrow-icon .th-arrow-bg {
-  background: #DEFF00;
+  background: #FF7B00;
 }
 .th-blog-iner-btn:hover .th-service-arrow-icon .th-arrow-bg img {
   filter: brightness(0);
 }
 .th-blog-iner-btn:hover .th-service-arrow-icon .th-arrow-content {
-  color: #DEFF00;
+  color: #FF7B00;
 }
 
 .th-single-blog-classic-area .th-thumb img {
@@ -7346,7 +7346,7 @@ p {
 }
 .th-single-blog-classic-area .th-content .th-meta a cite {
   font-style: normal;
-  color: #DEFF00;
+  color: #FF7B00;
 }
 .th-single-blog-classic-area .th-content .th-title {
   font-size: 32px;
@@ -7356,7 +7356,7 @@ p {
   transition: 0.3s;
 }
 .th-single-blog-classic-area .th-content .th-title:hover {
-  color: #DEFF00;
+  color: #FF7B00;
   transition: 0.3s;
 }
 .th-single-blog-classic-area .th-content .th-para {
@@ -7415,7 +7415,7 @@ p {
   margin-right: 12px;
 }
 .th-blog-details-wrapf-flex1 .tags:hover {
-  background: #DEFF00;
+  background: #FF7B00;
   color: #101010;
   transition: 0.3s;
 }
@@ -7450,7 +7450,7 @@ p {
 .th-blog-details-wrapf-flex2 .th-social:hover {
   color: #101010;
   transition: 0.3s;
-  background-color: #DEFF00;
+  background-color: #FF7B00;
 }
 
 .th-blog-details-wrapf {
@@ -7484,7 +7484,7 @@ p {
 }
 .th-nextprevious-flex .th-next:hover span {
   transition: 0.3s;
-  background: #DEFF00;
+  background: #FF7B00;
 }
 .th-nextprevious-flex .th-next:hover span img {
   filter: brightness(0) invert(1);
@@ -7509,7 +7509,7 @@ p {
 }
 .th-nextprevious-flex .th-next-2:hover span {
   transition: 0.3s;
-  background: #DEFF00;
+  background: #FF7B00;
 }
 .th-nextprevious-flex .th-next-2:hover span img {
   filter: brightness(0) invert(1);
@@ -7598,7 +7598,7 @@ p {
   }
 }
 .th-social-mainflex-icon a:hover {
-  background: #DEFF00;
+  background: #FF7B00;
   color: #121212;
   transition: 0.3s;
 }
@@ -7620,7 +7620,7 @@ p {
   color: #B8B8B8;
 }
 .th-blog-search-box-relative .icon-serarch {
-  background: #DEFF00;
+  background: #FF7B00;
   height: 40px;
   width: 40px;
   line-height: 44px;
@@ -7663,7 +7663,7 @@ p {
   padding-top: 4px;
 }
 .th-recent-post .th-titlee:hover {
-  color: #DEFF00;
+  color: #FF7B00;
   transition: 0.3s;
 }
 
@@ -7682,7 +7682,7 @@ p {
   border-radius: 100px;
 }
 .th-blog-meta-tags a:hover {
-  background: #DEFF00;
+  background: #FF7B00;
   transition: 0.3s;
   color: #121212;
 }
@@ -8475,7 +8475,7 @@ p {
   transition: 0.3s;
 }
 .th-main-menu ul > li .sub-menu li:hover > a {
-  color: #DEFF00;
+  color: #FF7B00;
   transition: 0.3s;
 }
 .th-main-menu ul > li .sub-menu li:hover > .sub-menu {
@@ -8490,7 +8490,7 @@ p {
   transform: translateY(-50%);
 }
 .th-main-menu ul > li:hover a {
-  color: #DEFF00;
+  color: #FF7B00;
   transition: 0.3s;
 }
 .th-main-menu ul > li:hover .sub-menu {
@@ -8874,7 +8874,7 @@ p {
 }
 .th-contact-sm-widget-1 .th-parea:hover {
   transition: 0.3s;
-  color: #DEFF00;
+  color: #FF7B00;
 }
 .th-contact-sm-widget-1 .contact-social {
   margin-right: 12px;
@@ -8889,7 +8889,7 @@ p {
   transition: 0.3s;
 }
 .th-contact-sm-widget-1 .contact-social:hover {
-  background: #DEFF00;
+  background: #FF7B00;
   color: #0E0E0E;
   transition: 0.3s;
 }
@@ -9789,7 +9789,7 @@ hr.th-skill-border-2 {
 }
 
 .swiper-slide-active .th-portfolio-slide-img {
-  border-color: #DEFF00;
+  border-color: #FF7B00;
 }
 .swiper-slide-active .th-portfolio-content {
   opacity: 1;
@@ -10035,7 +10035,7 @@ hr.th-skill-border-2 {
   padding-bottom: 8px;
 }
 .th-portfolio-wrap-content .th-title:hover {
-  color: #DEFF00;
+  color: #FF7B00;
   transition: 0.3s;
 }
 .th-portfolio-wrap-content .th-para {
@@ -10180,7 +10180,7 @@ h3.th-year {
 }
 .th-awrd-title span {
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--Primary-500, #DEFF00);
+  -webkit-text-stroke-color: var(--Primary-500, #FF7B00);
   font-family: "Inter Tight";
   font-style: normal;
   -webkit-background-clip: text;
@@ -10360,7 +10360,7 @@ h3.th-year {
   font-weight: 400;
 }
 .service-lar-content-box-1 .th-para span {
-  color: #DEFF00;
+  color: #FF7B00;
 }
 .service-lar-content-box-1 ul li {
   color: #B4B2B2;
@@ -10377,7 +10377,7 @@ h3.th-year {
 }
 
 .th-servic-auth-box-flex {
-  border: 1px solid #DEFF00;
+  border: 1px solid #FF7B00;
   transition: 0.3s;
   border-radius: 16px;
   padding: 32px;
@@ -10482,7 +10482,7 @@ h3.th-year {
   bottom: 0;
   width: 80px;
   height: 3px;
-  background: #DEFF00;
+  background: #FF7B00;
   border-radius: 64px;
 }
 .th-service-widget-1 .th-para {
@@ -10513,7 +10513,7 @@ h3.th-year {
   margin-bottom: 0;
 }
 .th-single-cat a:hover {
-  background: #DEFF00;
+  background: #FF7B00;
   transition: 0.3s;
   color: #0E0E0E;
 }
@@ -10557,12 +10557,12 @@ h3.th-year {
   font-weight: 700;
 }
 .th-phone-number .th-number:hover {
-  color: #DEFF00;
+  color: #FF7B00;
   transition: 0.3s;
 }
 
 .th-title-top {
-  color: #DEFF00;
+  color: #FF7B00;
   font-size: 18px;
   line-height: 26px;
   font-weight: 600;
@@ -11645,7 +11645,7 @@ h3.th-year {
 }
 .th-banner-content .th-title2 {
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--Primary-500, #DEFF00);
+  -webkit-text-stroke-color: var(--Primary-500, #FF7B00);
   font-family: "Inter Tight";
   font-size: 100px;
   font-style: normal;

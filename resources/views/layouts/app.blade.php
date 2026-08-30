@@ -72,9 +72,42 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
     <style>
+    /* Master Brand Theme Overrides - 100% Brand Orange #FF7B00 (Zero Green) */
+    :root {
+        --primary-color: #FF7B00 !important;
+        --primary-color-2: #FF7B00 !important;
+        --primary-color-3: #FF7B00 !important;
+    }
+
     /* Reset rotated span on title for straight, clean typography */
     .th-banner-content-thee .th-title span {
         transform: none !important;
+    }
+
+    /* Mobile Navigation & Offcanvas Menu Fixes */
+    .th-offcanvas-menu ul li a,
+    .th-offcanvas-menu ul li > a {
+        color: #FFFFFF !important;
+        border-bottom: 1px solid rgba(255, 123, 0, 0.2) !important;
+    }
+
+    .th-offcanvas-menu ul li.active > a,
+    .th-offcanvas-menu ul li a:hover,
+    .th-offcanvas-menu ul li.active > a span,
+    .th-mobile-menu-active ul li.active > a,
+    .th-mobile-menu-active ul li a:hover {
+        color: #FF7B00 !important;
+    }
+
+    .th-menu-close,
+    .th-offcanvas-menu ul li.active > .th-menu-close {
+        background: #FF7B00 !important;
+        color: #000000 !important;
+        border-color: #FF7B00 !important;
+    }
+
+    .th-menu-btn span {
+        background-color: #FF7B00 !important;
     }
 
     @media (max-width: 991px) {

@@ -71,6 +71,35 @@
     <!-- style css -->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
+    <style>
+    @media (max-width: 991px) {
+        .th-banner-content-thee {
+            text-align: center !important;
+            margin-top: 40px !important;
+        }
+        .th-banner-content-thee .th-subtitle,
+        .th-banner-content-thee .th-title,
+        .th-banner-content-thee .th-para {
+            text-align: center !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+        .th-banner-btn-wrap {
+            justify-content: center !important;
+        }
+        .th-banner-content-thee .d-flex {
+            justify-content: center !important;
+        }
+        .th-section-title {
+            text-align: center !important;
+        }
+        .th-section-title .sub-title,
+        .th-section-title .title {
+            text-align: center !important;
+        }
+    }
+    </style>
+
     @stack('styles')
 </head>
 

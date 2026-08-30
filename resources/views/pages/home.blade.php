@@ -17,7 +17,7 @@
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 mb-30 order-1">
-                                <div class="th-banner-content-thee mt-100">
+                                <div class="th-banner-content-thee mt-100 text-center text-lg-start">
                                     <h3 class="th-subtitle" data-aos="fade-ul"> <span class="mr-4"><img
                                                 src="{{ asset('assets/img/icon/th-subtitle-icon-3.1.png') }}" alt=""></span> Hello
                                         Everyone! 👋</h3>
@@ -26,7 +26,7 @@
                                     <p class="th-para text-anime-style-1">Full Stack Engineer &amp; Tech Leader with 5+ years of experience building complete digital products end-to-end. From scalable Laravel &amp; Node.js backends to cloud DevOps, frontend platforms, and enterprise solutions — delivering as a leader &amp; technical architect.</p>
 
                                      <!-- th button area -->
-                                     <div class="th-banner-btn-wrap mb-4 d-flex align-items-center flex-wrap gap-3">
+                                     <div class="th-banner-btn-wrap mb-4 d-flex align-items-center justify-content-center justify-content-lg-start flex-wrap gap-3">
                                          <!-- primary btn -->
                                          <a href="{{ route('contact') }}" class="th-primary-btn th-primary-btn-3"
                                              data-aos="fade-up">
@@ -52,7 +52,7 @@
                                      </div>
 
                                      <!-- separate role badges -->
-                                     <div class="d-flex flex-wrap gap-2 mt-2" data-aos="fade-up">
+                                     <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-2 mt-2" data-aos="fade-up">
                                          <span class="badge bg-dark text-warning border border-secondary px-3 py-2 fs-6 rounded-pill fw-medium">
                                              <i class="fa-solid fa-crown me-1"></i> Backend Lead @ FinCrif
                                          </span>

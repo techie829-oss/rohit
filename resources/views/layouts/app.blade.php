@@ -262,9 +262,13 @@
                 <p class="th-offcanvas-para">Backend Developer Lead @ FinCrif India & Founder @ Solidrix Solutions. 5+ Years in Full Stack Engineering, Enterprise SaaS & Cloud DevOps.</p>
             </div>
 
-            <div class="th-offcanvas-gallery mb-40">
-                <a class="popup-image" href="{{ asset('assets/img/devceloper/th-blog-thumb2.1.png') }}"><img class="w-100" src="{{ asset('assets/img/devceloper/th-blog-thumb2.1.png') }}" alt=""></a>
-                <a class="popup-image" href="{{ asset('assets/img/devceloper/th-blog-thumb2.2.png') }}"><img class="w-100" src="{{ asset('assets/img/devceloper/th-blog-thumb2.2.png') }}" alt=""></a>
+            <div class="th-offcanvas-gallery mb-40 d-flex gap-3">
+                <a class="popup-image w-50" href="{{ asset('assets/img/projects/sklops_saas_dashboard.png') }}">
+                    <img class="w-100 rounded-3 border border-secondary" src="{{ asset('assets/img/projects/sklops_saas_dashboard.png') }}" alt="SKLOPS Dashboard" style="height: 110px; object-fit: cover;">
+                </a>
+                <a class="popup-image w-50" href="{{ asset('assets/img/projects/hrms_saas_dashboard.png') }}">
+                    <img class="w-100 rounded-3 border border-secondary" src="{{ asset('assets/img/projects/hrms_saas_dashboard.png') }}" alt="HRMS SaaS" style="height: 110px; object-fit: cover;">
+                </a>
             </div>
 
             <div class="th-offcanvas-info mb-30">

@@ -262,15 +262,6 @@
                 <p class="th-offcanvas-para">Backend Developer Lead @ FinCrif India & Founder @ Solidrix Solutions. 5+ Years in Full Stack Engineering, Enterprise SaaS & Cloud DevOps.</p>
             </div>
 
-            <div class="th-offcanvas-gallery mb-40 d-flex gap-3">
-                <a class="popup-image w-50" href="{{ asset('assets/img/projects/sklops_saas_dashboard.png') }}">
-                    <img class="w-100 rounded-3 border border-secondary" src="{{ asset('assets/img/projects/sklops_saas_dashboard.png') }}" alt="SKLOPS Dashboard" style="height: 110px; object-fit: cover;">
-                </a>
-                <a class="popup-image w-50" href="{{ asset('assets/img/projects/hrms_saas_dashboard.png') }}">
-                    <img class="w-100 rounded-3 border border-secondary" src="{{ asset('assets/img/projects/hrms_saas_dashboard.png') }}" alt="HRMS SaaS" style="height: 110px; object-fit: cover;">
-                </a>
-            </div>
-
             <div class="th-offcanvas-info mb-30">
                 <h3 class="th-offcanvas-title mb-20">Contact Us</h3>
                 <a href="tel:+917007420572">+91-7007420572</a>

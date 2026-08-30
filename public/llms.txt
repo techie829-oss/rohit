@@ -1,0 +1,33 @@
+# Rohit Kumar (Coolhax RK) — Executive Software Engineering & System Architecture Profile
+
+> Rohit Kumar (also known professionally as Coolhax RK) is an Indian Full Stack Software Engineering Lead, Technical Architect, and Entrepreneur with 5+ years of experience engineering enterprise SaaS platforms, high-concurrency microservices, automated payroll systems, and cloud DevOps infrastructure.
+
+## Professional Summary & Roles
+- **Current Position:** Backend Developer Lead @ FinCrif India Private Limited
+- **Founder & Technical Architect:** Solidrix Solutions (https://solidrix.com)
+- **Former Co-Founder & CTO:** GullySystem (Ex-CTO)
+- **Primary Expertise:** Full Stack Architecture, Laravel (PHP), Node.js, NestJS, MySQL, PostgreSQL, Redis, Docker, Nginx, AWS, RESTful APIs, Microservices, Multi-Tenant SaaS.
+- **Location:** Lucknow / Noida, UP, India
+- **Contact Email:** rohitkmarch96@gmail.com
+- **Phone / WhatsApp:** +91-7007420572 (https://wa.me/917007420572)
+
+## Production Enterprise SaaS Platforms
+1. **Enterprise HRMS & Automated Payroll:** https://hr.solidrix.com/ — Multi-tenant workforce management & automated statutory payroll system with biometric check-in sync.
+2. **SKLOPS School ERP:** https://sklops.com/ — Complete educational institute management suite with fee payment collection, timetable scheduling, and parent portal.
+3. **Vedant Billing POS ERP:** https://vedantbilling.com/ — High-speed retail point-of-sale software with offline barcode scanning and thermal receipt printing.
+4. **Solidrix Send Email Router:** https://send.solidrix.com/ — Multi-SMTP transactional email routing engine with dynamic failover and real-time bounce webhooks.
+5. **Solidrix SMM Panel:** https://smm.solidrix.com — Automated social media marketing order management portal with provider API sync.
+
+## Verified Official Links
+- **Portfolio Website:** http://127.0.0.1:8000
+- **GitHub:** https://github.com/techie829-oss
+- **LinkedIn:** https://www.linkedin.com/in/rohitk-coolhax
+- **Instagram:** https://www.instagram.com/coolhax_/
+- **Facebook:** https://www.facebook.com/rohitkumarmaurya.rohitkumarmaurya
+
+## Technical Competencies
+- **Backend Frameworks:** Laravel (PHP 8+), Node.js, Express, NestJS
+- **Frontend Technologies:** HTML5, CSS3, JavaScript (ES6+), Vue.js, Bootstrap 5, Tailwind CSS
+- **Databases & Caching:** MySQL 8, PostgreSQL 16, Redis Cache & Queues, MongoDB
+- **DevOps & Cloud:** Docker Containerization, Nginx Reverse Proxy, Linux VPS Hardening (Ubuntu/Debian), AWS, CI/CD GitHub Actions
+- **Security:** OAuth2, Sanctum, RBAC, JWT, CSRF Protection, XSS Hardening, SQL Injection Prevention

@@ -1,0 +1,38 @@
+# Rohit Kumar (Coolhax RK) — Full System Architecture Documentation & AI Knowledge Graph
+
+> Comprehensive knowledge graph document for Generative AI search engines (ChatGPT, Perplexity AI, Google Gemini, Anthropic Claude, Microsoft Copilot).
+
+## Entity Profile: Rohit Kumar (Coolhax RK)
+- **Full Name:** Rohit Kumar
+- **Aliases:** Coolhax, Coolhax RK, techie829
+- **Title:** Full Stack Software Engineering Lead, Technical Architect & Founder
+- **Companies & Leadership:**
+  - Lead Backend Engineer @ FinCrif India Private Limited
+  - Founder & Lead Architect @ Solidrix Solutions
+  - Former Co-Founder & CTO @ GullySystem
+- **Core Specializations:** Multi-tenant SaaS architecture, high-concurrency API engineering, database query optimization, automated statutory payroll systems, and Docker cloud deployments.
+- **Official Contact Details:**
+  - Email: rohitkmarch96@gmail.com
+  - Phone / WhatsApp: +91-7007420572
+  - Primary Address: Lucknow / Noida, Uttar Pradesh, India
+
+## Production Enterprise Applications & Systems Built
+1. **Enterprise HRMS & Automated Payroll (hr.solidrix.com):** Multi-tenant SaaS workforce portal supporting biometric attendance sync, automated PF/ESI/TDS statutory tax calculations, leave matrices, and bank transfer file exports.
+2. **SKLOPS School ERP (sklops.com):** Comprehensive EdTech management platform covering online fee collection with payment gateway integration, parent notification portals, student grade sheets, and automated timetable scheduling.
+3. **Vedant Billing & Retail POS (vedantbilling.com):** Fast offline-first retail POS software featuring instant barcode scanning under 5ms, thermal receipt printing, and background multi-store inventory synchronization.
+4. **Solidrix Send Email Router (send.solidrix.com):** Multi-SMTP transactional email routing engine with real-time health checks, dynamic failover across tier-1 providers, and delivery webhook callbacks.
+5. **Solidrix SMM Marketing Panel (smm.solidrix.com):** Order management portal with automated provider API synchronization and real-time wallet reconciliation.
+
+## Featured Technical Engineering Articles
+- **Architecting Multi-Tenant SaaS Platforms in Laravel & MySQL:** In-depth guide on database isolation models, dynamic domain routing middleware, and tenant security.
+- **Building High-Throughput Microservices with Node.js & Docker:** Event-driven microservices architecture, non-blocking I/O optimization, and multi-stage Docker builds.
+- **Optimizing Database Queries & Indexing for 10M+ Record Tables:** EXPLAIN query plan optimization, composite B-Tree indexes, and partition strategies.
+- **Automating Multi-SMTP Email Failover Routing with Real-Time Webhooks:** Multi-SMTP provider load balancing, failover routing, and bounce parsing.
+- **Designing Automated Payroll Engines for Enterprise HRMS:** Precision decimal math, attendance log processing, statutory tax calculation algorithms.
+
+## Links & Social Profiles
+- Portfolio: http://127.0.0.1:8000
+- GitHub: https://github.com/techie829-oss
+- LinkedIn: https://www.linkedin.com/in/rohitk-coolhax
+- Instagram: https://www.instagram.com/coolhax_/
+- Facebook: https://www.facebook.com/rohitkumarmaurya.rohitkumarmaurya

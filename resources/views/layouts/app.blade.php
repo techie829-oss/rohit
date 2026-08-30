@@ -72,6 +72,11 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
     <style>
+    /* Reset rotated span on title for straight, clean typography */
+    .th-banner-content-thee .th-title span {
+        transform: none !important;
+    }
+
     @media (max-width: 991px) {
         .th-banner-content-thee {
             text-align: center !important;

@@ -30,5 +30,5 @@ User-agent: Bingbot
 Allow: /
 
 # Sitemap & LLM AI Text References
-Sitemap: http://127.0.0.1:8000/sitemap.xml
-Sitemap: http://127.0.0.1:8000/llms.txt
+Sitemap: https://rohitcoolhx.corenim.com/sitemap.xml
+Sitemap: https://rohitcoolhx.corenim.com/llms.txt

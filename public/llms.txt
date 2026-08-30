@@ -7,6 +7,7 @@
 - **Founder & Technical Architect:** Solidrix Solutions (https://solidrix.com)
 - **Former Co-Founder & CTO:** GullySystem (Ex-CTO)
 - **Primary Expertise:** Full Stack Architecture, Laravel (PHP), Node.js, NestJS, MySQL, PostgreSQL, Redis, Docker, Nginx, AWS, RESTful APIs, Microservices, Multi-Tenant SaaS.
+- **Official Website:** https://rohitcoolhx.corenim.com
 - **Location:** Lucknow / Noida, UP, India
 - **Contact Email:** rohitkmarch96@gmail.com
 - **Phone / WhatsApp:** +91-7007420572 (https://wa.me/917007420572)
@@ -19,7 +20,7 @@
 5. **Solidrix SMM Panel:** https://smm.solidrix.com — Automated social media marketing order management portal with provider API sync.
 
 ## Verified Official Links
-- **Portfolio Website:** http://127.0.0.1:8000
+- **Portfolio Website:** https://rohitcoolhx.corenim.com
 - **GitHub:** https://github.com/techie829-oss
 - **LinkedIn:** https://www.linkedin.com/in/rohitk-coolhax
 - **Instagram:** https://www.instagram.com/coolhax_/

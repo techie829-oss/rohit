@@ -84,16 +84,48 @@
         transform: none !important;
     }
 
-    /* Mobile Navigation & Offcanvas Menu Fixes */
+    /* Complete Dark Mode Offcanvas Drawer & Mobile Navigation Overrides */
+    .th-offcanvas {
+        background: #0E0E0E !important;
+        border-left: 1px solid rgba(255, 123, 0, 0.3) !important;
+        color: #FFFFFF !important;
+    }
+
+    .th-offcanvas-title,
+    .th-offcanvas-content h2,
+    .th-offcanvas-info h3 {
+        color: #FFFFFF !important;
+    }
+
+    .th-offcanvas-para,
+    .th-offcanvas-info a {
+        color: #B4B2B2 !important;
+    }
+
+    .th-offcanvas-info a:hover {
+        color: #FF7B00 !important;
+    }
+
+    .th-offcanvas-close-toggle {
+        color: #FF7B00 !important;
+        background: transparent !important;
+        border: none !important;
+    }
+
+    /* Offcanvas Navigation Links Override */
+    .th-offcanvas-menu nav ul li a,
     .th-offcanvas-menu ul li a,
     .th-offcanvas-menu ul li > a {
         color: #FFFFFF !important;
-        border-bottom: 1px solid rgba(255, 123, 0, 0.2) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+        font-weight: 600 !important;
+        font-size: 16px !important;
     }
 
+    .th-offcanvas-menu nav ul li.active > a,
+    .th-offcanvas-menu nav ul li a:hover,
     .th-offcanvas-menu ul li.active > a,
     .th-offcanvas-menu ul li a:hover,
-    .th-offcanvas-menu ul li.active > a span,
     .th-mobile-menu-active ul li.active > a,
     .th-mobile-menu-active ul li a:hover {
         color: #FF7B00 !important;

@@ -54,7 +54,7 @@
                                      <!-- separate role badges -->
                                      <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-2 mt-2" data-aos="fade-up">
                                          <span class="badge bg-dark text-warning border border-secondary px-3 py-2 fs-6 rounded-pill fw-medium">
-                                             <i class="fa-solid fa-crown me-1"></i> Backend Lead @ FinCrif
+                                             <i class="fa-solid fa-crown me-1"></i> Team Lead @ FinCrif
                                          </span>
                                          <span class="badge bg-dark text-warning border border-secondary px-3 py-2 fs-6 rounded-pill fw-medium">
                                              <i class="fa-solid fa-rocket me-1"></i> Founder @ Solidrix
@@ -210,7 +210,7 @@
                         <div class="th-section-title th-section-title-3 mb-30">
                             <!-- th section title -->
                             <h2 class="title text-anime-style-2">Passionate About Full-Stack Product Engineering &amp; Digital Automation</h2>
-                            <p class="th-para pt-32" data-aos="fade-up">Backend Developer Lead at FinCrif India Private Limited, former Co-Founder &amp; CTO at GullySystem Private Limited, and Founder of Solidrix Solutions with 5+ years of core software engineering &amp; product architecture experience. Building complete applications — from intuitive user interfaces to scalable Laravel/Node.js backends, multi-tenant databases, containerized cloud infrastructure, and 99.9% production uptime.</p>
+                            <p class="th-para pt-32" data-aos="fade-up">Team Lead at FinCrif India Private Limited, former Co-Founder &amp; CTO at GullySystem Private Limited, and Founder of Solidrix Solutions with 5+ years of core software engineering &amp; product architecture experience. Building complete applications — from intuitive user interfaces to scalable Laravel/Node.js backends, multi-tenant databases, containerized cloud infrastructure, and 99.9% production uptime.</p>
                         </div>
 
                         <div class="row g-5">
@@ -344,7 +344,7 @@
                                 <span><img src="{{ asset('assets/img/marketer/th-offer-icon1.3.png') }}" alt=""></span>
                             </div>
                             <div class="th-offer-box-wrap-topflex-tag">
-                                <a href="{{ route('services.details') }}" class="tag3">Service _ 03</a>
+                                <a href="{{ route('services.details') }}" class="ui tag3">Service _ 03</a>
                             </div>
                         </div>
                         <!-- centerflex -->
@@ -587,7 +587,7 @@
                         <div class="th-single-achivement-icon">
                             <span><img src="{{ asset('assets/img/icon/th-achive-icon-3.1.png') }}" alt=""></span>
                         </div>
-                        <h3 class="th-single-achivement-title">Backend Developer Lead @ FinCrif India &bull; 2026</h3>
+                        <h3 class="th-single-achivement-title">Team Lead @ FinCrif India &bull; 2026</h3>
                     </div>
                     <!-- single iconbox -->
                     <div class="th-single-achivement" data-aos="fade-up">

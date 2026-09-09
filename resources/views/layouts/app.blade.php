@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title', 'Rohit Kumar (Coolhax RK) - Full Stack Lead, Tech Founder & Architect')</title>
     <meta name="description" content="@yield('meta_description', 'Rohit Kumar (Coolhax RK) - Full Stack Team Lead at FinCrif India, Founder at Solidrix Solutions & Former Co-Founder/CTO at GullySystem. 5+ Years in Full Stack Engineering, Enterprise SaaS, Laravel, Node.js & Cloud DevOps.')">
     <meta name="keywords" content="Rohit Kumar, Coolhax, Coolhax RK, Full Stack Lead, Full Stack Team Lead, FinCrif India, Solidrix Solutions, GullySystem, Laravel Developer, Node.js Architect, Enterprise SaaS, Multi-Tenant HRMS, SKLOPS, Vedant Billing">
@@ -320,7 +321,7 @@
                                 <li><a href="https://www.linkedin.com/in/rohitk-coolhax" target="_blank"><span><i class="fa-brands fa-linkedin-in"></i></span></a>LinkedIn</li>
                             </ul>
                         </div>
-                        <div class="th-footer-menu th-footer-menu-3 text-center">
+                        <div class="th-footer-menu th-footer-menu-3 text-center mb-32">
                             <ul>
                                 <li><a href="{{ route('about') }}">ABOUT ME</a></li>
                                 <li><a href="{{ route('services') }}">SERVICES</a></li>
@@ -329,6 +330,21 @@
                                 <li><a href="{{ route('contact') }}">CONTACT US</a></li>
                             </ul>
                         </div>
+
+                        <!-- Newsletter Form -->
+                        <div class="newsletter-wrapper text-center mx-auto mt-4" style="max-width: 500px;">
+                            <h4 class="text-white mb-3" style="font-family: var(--th-fonts-Urbanist), sans-serif;">Subscribe to my Newsletter</h4>
+                            <p class="text-white-50 mb-4">Get weekly insights on SaaS Architecture, Laravel & Engineering Leadership.</p>
+                            
+                            <form id="newsletter-form" class="d-flex position-relative">
+                                <input type="email" id="newsletter-email" name="email" class="form-control rounded-pill px-4 py-3" placeholder="Enter your email address" required style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #fff;">
+                                <button type="submit" id="newsletter-btn" class="btn rounded-pill position-absolute top-50 end-0 translate-middle-y me-1 px-4 py-2" style="background: #FF7B00; color: #fff; border: none; transition: 0.3s;">
+                                    Subscribe <i class="fa-solid fa-paper-plane ms-2"></i>
+                                </button>
+                            </form>
+                            <div id="newsletter-message" class="mt-3 fs-6" style="display: none;"></div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -383,6 +399,47 @@
     <script src="{{ asset('assets/js/parallaxie.js') }}"></script>
     <script src="{{ asset('assets/js/main.js') }}"></script>
 
+    <script>
+        $(document).ready(function() {
+            // Setup CSRF token for all AJAX requests
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            $('#newsletter-form').on('submit', function(e) {
+                e.preventDefault();
+                
+                var email = $('#newsletter-email').val();
+                var $btn = $('#newsletter-btn');
+                var $msg = $('#newsletter-message');
+                
+                $btn.prop('disabled', true).html('Subscribing... <i class="fa-solid fa-spinner fa-spin ms-2"></i>');
+                $msg.hide().removeClass('text-success text-danger');
+
+                $.ajax({
+                    url: '{{ route("newsletter.subscribe") }}',
+                    type: 'POST',
+                    data: { email: email },
+                    success: function(response) {
+                        $msg.addClass('text-success').text(response.message).fadeIn();
+                        $('#newsletter-email').val('');
+                        $btn.prop('disabled', false).html('Subscribe <i class="fa-solid fa-paper-plane ms-2"></i>');
+                    },
+                    error: function(xhr) {
+                        var errorText = 'An error occurred. Please try again.';
+                        if(xhr.responseJSON && xhr.responseJSON.errors && xhr.responseJSON.errors.email) {
+                            errorText = xhr.responseJSON.errors.email[0];
+                        }
+                        $msg.addClass('text-danger').text(errorText).fadeIn();
+                        $btn.prop('disabled', false).html('Subscribe <i class="fa-solid fa-paper-plane ms-2"></i>');
+                    }
+                });
+            });
+        });
+    </script>
+    
     @stack('scripts')
 </body>
 

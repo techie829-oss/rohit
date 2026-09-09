@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\Admin\AdminAuthController;
 use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\Admin\BlogCrudController;
@@ -14,6 +15,8 @@ use App\Models\Blog;
 | Web Routes - Rohit Kumar Portfolio & Technical Applications
 |--------------------------------------------------------------------------
 */
+
+Route::post('/api/subscribe', [NewsletterController::class, 'subscribe'])->name('newsletter.subscribe');
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about', [HomeController::class, 'about'])->name('about');

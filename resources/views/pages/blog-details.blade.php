@@ -36,6 +36,7 @@
                     <div class="d-flex align-items-center gap-4 text-warning mb-4 fs-6">
                         <span><i class="fa-solid fa-user me-1"></i> {{ $blog->author }}</span>
                         <span><i class="fa-solid fa-calendar me-1"></i> {{ $blog->published_at ? $blog->published_at->format('M d, Y') : $blog->created_at->format('M d, Y') }}</span>
+                        <span><i class="fa-solid fa-eye me-1"></i> {{ number_format($blog->views) }} Views</span>
                     </div>
                 </div>
 
@@ -48,28 +49,23 @@
                         <p class="fs-5 text-warning mb-0 font-italics"><strong>Executive Summary:</strong> {{ $blog->summary }}</p>
                     </div>
 
-                    @php
-                        // Format markdown headings, code blocks, bold text, and line breaks for rich article view
-                        $formattedContent = e($blog->content);
-                        // Code blocks ```code```
-                        $formattedContent = preg_replace('/```([a-z]*)\n(.*?)```/s', '<pre class="bg-dark text-warning p-3 rounded-3 border border-secondary my-3 overflow-x-auto"><code>$2</code></pre>', $formattedContent);
-                        // Headings ### Title
-                        $formattedContent = preg_replace('/### (.*?)\n/', '<h3 class="text-white fs-3 fw-bold mt-4 mb-3" style="color: #FF7B00 !important;">$1</h3>', $formattedContent);
-                        // Headings ## Title
-                        $formattedContent = preg_replace('/## (.*?)\n/', '<h2 class="text-white fs-2 fw-bold mt-4 mb-3" style="color: #FF7B00 !important;">$1</h2>', $formattedContent);
-                        // Bold **text**
-                        $formattedContent = preg_replace('/\*\*(.*?)\*\*/', '<strong class="text-white">$1</strong>', $formattedContent);
-                        // Inline code `code`
-                        $formattedContent = preg_replace('/`(.*?)`/', '<code class="bg-dark text-warning px-2 py-1 rounded fs-6 border border-secondary">$1</code>', $formattedContent);
-                        // Bullet lists - item
-                        $formattedContent = preg_replace('/^\- (.*?)$/m', '<li class="ms-3 mb-2">$1</li>', $formattedContent);
-                        // Newlines
-                        $formattedContent = nl2br($formattedContent);
-                    @endphp
-
                     <div class="blog-rich-text">
-                        {!! $formattedContent !!}
+                        {!! $blog->content !!}
                     </div>
+                </div>
+
+                <!-- Social Share Area -->
+                <div class="mt-4 mb-4 d-flex align-items-center gap-3">
+                    <span class="text-white fw-bold fs-5">Share this article:</span>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ urlencode(request()->url()) }}" target="_blank" class="btn btn-outline-warning rounded-circle" style="width: 45px; height: 45px; display: inline-flex; align-items: center; justify-content: center;">
+                        <i class="fa-brands fa-linkedin-in fs-5"></i>
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?url={{ urlencode(request()->url()) }}&text={{ urlencode($blog->title) }}" target="_blank" class="btn btn-outline-warning rounded-circle" style="width: 45px; height: 45px; display: inline-flex; align-items: center; justify-content: center;">
+                        <i class="fa-brands fa-x-twitter fs-5"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?text={{ urlencode($blog->title . ' - ' . request()->url()) }}" target="_blank" class="btn btn-outline-warning rounded-circle" style="width: 45px; height: 45px; display: inline-flex; align-items: center; justify-content: center;">
+                        <i class="fa-brands fa-whatsapp fs-5"></i>
+                    </a>
                 </div>
 
                 <!-- Author Box -->
@@ -87,12 +83,15 @@
 
             <div class="col-xl-4 col-lg-4 mt-4 mt-lg-0">
                 <div class="p-4 rounded-4 mb-30" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,123,0,0.2);">
-                    <h3 class="fs-4 fw-bold text-white mb-3"><i class="fa-solid fa-fire text-warning me-2"></i> Recent Articles</h3>
+                    <h3 class="fs-4 fw-bold text-white mb-3"><i class="fa-solid fa-fire-flame-curved text-warning me-2"></i> Trending Articles</h3>
                     <ul class="list-unstyled mb-0">
-                        @foreach($recentBlogs as $rec)
+                        @foreach($trendingBlogs as $rec)
                         <li class="mb-3 pb-3 border-bottom border-secondary">
                             <a href="{{ route('blog.show', $rec->slug) }}" class="text-warning text-decoration-none fw-bold fs-6 d-block mb-1">{{ $rec->title }}</a>
-                            <span class="text-secondary fs-6"><i class="fa-solid fa-calendar me-1"></i> {{ $rec->published_at ? $rec->published_at->format('M d, Y') : '' }}</span>
+                            <div class="d-flex justify-content-between align-items-center text-secondary fs-6">
+                                <span><i class="fa-solid fa-calendar me-1"></i> {{ $rec->published_at ? $rec->published_at->format('M d, Y') : '' }}</span>
+                                <span><i class="fa-solid fa-eye me-1"></i> {{ number_format($rec->views) }}</span>
+                            </div>
                         </li>
                         @endforeach
                     </ul>

@@ -51,9 +51,11 @@ class BlogController extends Controller
         } else {
             $blog = Blog::where('is_published', true)->latest('published_at')->firstOrFail();
         }
+        
+        $blog->increment('views');
 
-        $recentBlogs = Blog::where('is_published', true)->where('id', '!=', $blog->id)->latest('published_at')->take(4)->get();
+        $trendingBlogs = Blog::where('is_published', true)->where('id', '!=', $blog->id)->orderByDesc('views')->take(4)->get();
 
-        return view('pages.blog-details', compact('blog', 'recentBlogs'));
+        return view('pages.blog-details', compact('blog', 'trendingBlogs'));
     }
 }

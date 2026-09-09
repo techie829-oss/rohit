@@ -121,12 +121,17 @@
                             <td><span class="badge bg-warning text-dark rounded-pill">{{ $blog->category }}</span></td>
                             <td>{{ $blog->published_at ? $blog->published_at->format('M d, Y') : '-' }}</td>
                             <td>
-                                <a href="{{ route('admin.blogs.edit', $blog->id) }}" class="btn btn-sm btn-outline-warning rounded-pill me-1"><i class="fa-solid fa-pen"></i> Edit</a>
-                                <form action="{{ route('admin.blogs.destroy', $blog->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Are you sure you want to delete this blog?');">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="submit" class="btn btn-sm btn-outline-danger rounded-pill"><i class="fa-solid fa-trash"></i></button>
-                                </form>
+                                <div class="d-flex gap-1">
+                                    <button class="btn btn-sm btn-outline-info rounded-pill" onclick="openSocialModal({{ $blog->id }})">
+                                        <i class="fa-solid fa-mobile-screen-button"></i> Post
+                                    </button>
+                                    <a href="{{ route('admin.blogs.edit', $blog->id) }}" class="btn btn-sm btn-outline-warning rounded-pill"><i class="fa-solid fa-pen"></i> Edit</a>
+                                    <form action="{{ route('admin.blogs.destroy', $blog->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Are you sure you want to delete this blog?');">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-sm btn-outline-danger rounded-pill"><i class="fa-solid fa-trash"></i></button>
+                                    </form>
+                                </div>
                             </td>
                         </tr>
                         @empty

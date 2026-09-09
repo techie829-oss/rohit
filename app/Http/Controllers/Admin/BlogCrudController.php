@@ -70,6 +70,31 @@ class BlogCrudController extends Controller
     public function destroy(Blog $blog)
     {
         $blog->delete();
-        return redirect()->route('admin.blogs.index')->with('success', 'Blog article deleted successfully!');
+        return redirect()->route('admin.blogs.index')->with('success', 'Blog deleted successfully.');
+    }
+
+    public function generateSocialPost(Blog $blog)
+    {
+        $url = url('/blog/' . $blog->slug);
+        $title = $blog->title;
+        $summary = \Illuminate\Support\Str::limit(strip_tags($blog->content), 200);
+        $hashtags = "#Laravel #WebDevelopment #SaaS #TechLeadership #SoftwareEngineering";
+
+        $post = "🚀 New Article Alert!\n\n"
+              . "📝 {$title}\n\n"
+              . "💡 {$summary}\n\n"
+              . "Read the full guide here: {$url}\n\n"
+              . "{$hashtags}";
+
+        return response()->json([
+            'post' => $post,
+            'is_published' => $blog->is_social_published
+        ]);
+    }
+
+    public function markSocialPublished(Blog $blog)
+    {
+        $blog->update(['is_social_published' => true]);
+        return response()->json(['success' => true]);
     }
 }

@@ -45,6 +45,8 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     Route::post('/logout', [AdminAuthController::class, 'logout'])->name('logout');
 
     // Admin Blog CRUD
+    Route::get('/blogs/{blog}/social-post', [BlogCrudController::class, 'generateSocialPost'])->name('blogs.social-post');
+    Route::post('/blogs/{blog}/mark-social-published', [BlogCrudController::class, 'markSocialPublished'])->name('blogs.mark-social-published');
     Route::resource('blogs', BlogCrudController::class);
 
     // Admin Subscribers

@@ -50,5 +50,14 @@ class GenerateSocialPost extends Command
         $this->info("=== Generated Social Media Post ===");
         $this->line($post);
         $this->info("===================================");
+
+        if (!$blog->is_social_published) {
+            if ($this->confirm('Have you manually copied and posted this to social media? Mark as published?')) {
+                $blog->update(['is_social_published' => true]);
+                $this->info('Blog marked as socially published!');
+            }
+        } else {
+            $this->warn('Note: This blog has already been marked as socially published in the past.');
+        }
     }
 }

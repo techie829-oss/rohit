@@ -19,6 +19,7 @@ class Blog extends Model
         'content',
         'author',
         'is_published',
+        'is_social_published',
         'published_at'
     ];
 

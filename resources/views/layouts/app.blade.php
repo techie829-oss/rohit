@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Rohit Kumar (Coolhax RK) - Full Stack Lead, Tech Founder & Architect')</title>
-    <meta name="description" content="@yield('meta_description', 'Rohit Kumar (Coolhax RK) - Team Lead at FinCrif India, Founder at Solidrix Solutions & Former Co-Founder/CTO at GullySystem. 5+ Years in Full Stack Engineering, Enterprise SaaS, Laravel, Node.js & Cloud DevOps.')">
-    <meta name="keywords" content="Rohit Kumar, Coolhax, Coolhax RK, Full Stack Lead, Team Lead, FinCrif India, Solidrix Solutions, GullySystem, Laravel Developer, Node.js Architect, Enterprise SaaS, Multi-Tenant HRMS, SKLOPS, Vedant Billing">
+    <meta name="description" content="@yield('meta_description', 'Rohit Kumar (Coolhax RK) - Full Stack Team Lead at FinCrif India, Founder at Solidrix Solutions & Former Co-Founder/CTO at GullySystem. 5+ Years in Full Stack Engineering, Enterprise SaaS, Laravel, Node.js & Cloud DevOps.')">
+    <meta name="keywords" content="Rohit Kumar, Coolhax, Coolhax RK, Full Stack Lead, Full Stack Team Lead, FinCrif India, Solidrix Solutions, GullySystem, Laravel Developer, Node.js Architect, Enterprise SaaS, Multi-Tenant HRMS, SKLOPS, Vedant Billing">
     <meta name="author" content="Rohit Kumar (Coolhax RK)">
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="@yield('title', 'Rohit Kumar (Coolhax RK) - Full Stack Lead & Tech Founder')">
-    <meta property="og:description" content="@yield('meta_description', 'Team Lead @ FinCrif India, Founder @ Solidrix Solutions, Former CTO @ GullySystem. 5+ Years in Full Stack Engineering & Cloud DevOps.')">
+    <meta property="og:description" content="@yield('meta_description', 'Full Stack Team Lead @ FinCrif India, Founder @ Solidrix Solutions, Former CTO @ GullySystem. 5+ Years in Full Stack Engineering & Cloud DevOps.')">
     <meta property="og:image" content="{{ asset('assets/img/og-banner.png') }}">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="@yield('title', 'Rohit Kumar (Coolhax RK) - Full Stack Lead & Tech Founder')">
-    <meta name="twitter:description" content="@yield('meta_description', 'Team Lead @ FinCrif India, Founder @ Solidrix Solutions, Former CTO @ GullySystem. 5+ Years in Full Stack Engineering & Cloud DevOps.')">
+    <meta name="twitter:description" content="@yield('meta_description', 'Full Stack Team Lead @ FinCrif India, Founder @ Solidrix Solutions, Former CTO @ GullySystem. 5+ Years in Full Stack Engineering & Cloud DevOps.')">
     <meta name="twitter:image" content="{{ asset('assets/img/og-banner.png') }}">
 
     <!-- Structured Data JSON-LD -->
@@ -259,7 +259,7 @@
 
             <div class="th-offcanvas-content mb-40">
                 <h2 class="th-offcanvas-title">Rohit Kumar</h2>
-                <p class="th-offcanvas-para">Team Lead @ FinCrif India & Founder @ Solidrix Solutions. 5+ Years in Full Stack Engineering, Enterprise SaaS & Cloud DevOps.</p>
+                <p class="th-offcanvas-para">Full Stack Team Lead @ FinCrif India & Founder @ Solidrix Solutions. 5+ Years in Full Stack Engineering, Enterprise SaaS & Cloud DevOps.</p>
             </div>
 
             <div class="th-offcanvas-info mb-30">

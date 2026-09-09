@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'About Me - Rohit Kumar (Coolhax RK)')
-@section('meta_description', 'Learn about Rohit Kumar (Coolhax RK), Team Lead at FinCrif India, Founder at Solidrix Solutions & Former Co-Founder/CTO at GullySystem with 5+ years of experience in enterprise SaaS, Laravel, Node.js & Cloud DevOps.')
+@section('meta_description', 'Learn about Rohit Kumar (Coolhax RK), Full Stack Team Lead at FinCrif India, Founder at Solidrix Solutions & Former Co-Founder/CTO at GullySystem with 5+ years of experience in enterprise SaaS, Laravel, Node.js & Cloud DevOps.')
 
 @section('content')
 <!-- =========== breadcrumb area start =========== -->
@@ -66,7 +66,7 @@
             <div class="col-xl-8">
                 <div class="th-about-box-wrap mb-30">
                     <div class="th-section-title pb-32">
-                        <p class="para fs-5 lh-lg text-light">I’m Rohit Kumar (Coolhax RK), Team Lead at FinCrif India Private Limited, Founder at Solidrix Solutions, and Former Co-Founder/CTO at GullySystem. With 5+ years of hands-on technical expertise, I design and architect complete end-to-end digital solutions — from robust Laravel and Node.js backends to enterprise multi-tenant SaaS applications, real-time API integrations, and automated cloud DevOps infrastructure.</p>
+                        <p class="para fs-5 lh-lg text-light">I’m Rohit Kumar (Coolhax RK), Full Stack Team Lead at FinCrif India Private Limited, Founder at Solidrix Solutions, and Former Co-Founder/CTO at GullySystem. With 5+ years of hands-on technical expertise, I design and architect complete end-to-end digital solutions — from robust Laravel and Node.js backends to enterprise multi-tenant SaaS applications, real-time API integrations, and automated cloud DevOps infrastructure.</p>
                     </div>
 
                     <div class="th-circle-box-grid">
@@ -206,7 +206,7 @@
             <div class="col-xl-7 col-lg-7 mb-30">
                 <div class="th-award-items-flex p-relative mb-3 d-flex justify-content-between align-items-center p-4 rounded-4" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1);">
                     <div class="th-awaard-content-wrap">
-                        <h3 class="th-title fs-4 fw-bold text-white mb-1">Team Lead</h3>
+                        <h3 class="th-title fs-4 fw-bold text-white mb-1">Full Stack Team Lead</h3>
                         <p class="th-para text-warning mb-0"><i class="fa-solid fa-building me-2"></i>FinCrif India Private Limited (Current)</p>
                     </div>
                     <span class="badge bg-warning text-dark px-3 py-2 fs-6 rounded-pill">Lead Role</span>

@@ -54,7 +54,7 @@
                                      <!-- separate role badges -->
                                      <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-2 mt-2" data-aos="fade-up">
                                          <span class="badge bg-dark text-warning border border-secondary px-3 py-2 fs-6 rounded-pill fw-medium">
-                                             <i class="fa-solid fa-crown me-1"></i> Team Lead @ FinCrif
+                                             <i class="fa-solid fa-crown me-1"></i> Full Stack Team Lead @ FinCrif
                                          </span>
                                          <span class="badge bg-dark text-warning border border-secondary px-3 py-2 fs-6 rounded-pill fw-medium">
                                              <i class="fa-solid fa-rocket me-1"></i> Founder @ Solidrix
@@ -210,7 +210,7 @@
                         <div class="th-section-title th-section-title-3 mb-30">
                             <!-- th section title -->
                             <h2 class="title text-anime-style-2">Passionate About Full-Stack Product Engineering &amp; Digital Automation</h2>
-                            <p class="th-para pt-32" data-aos="fade-up">Team Lead at FinCrif India Private Limited, former Co-Founder &amp; CTO at GullySystem Private Limited, and Founder of Solidrix Solutions with 5+ years of core software engineering &amp; product architecture experience. Building complete applications — from intuitive user interfaces to scalable Laravel/Node.js backends, multi-tenant databases, containerized cloud infrastructure, and 99.9% production uptime.</p>
+                            <p class="th-para pt-32" data-aos="fade-up">Full Stack Team Lead at FinCrif India Private Limited, former Co-Founder &amp; CTO at GullySystem Private Limited, and Founder of Solidrix Solutions with 5+ years of core software engineering &amp; product architecture experience. Building complete applications — from intuitive user interfaces to scalable Laravel/Node.js backends, multi-tenant databases, containerized cloud infrastructure, and 99.9% production uptime.</p>
                         </div>
 
                         <div class="row g-5">
@@ -587,7 +587,8 @@
                         <div class="th-single-achivement-icon">
                             <span><img src="{{ asset('assets/img/icon/th-achive-icon-3.1.png') }}" alt=""></span>
                         </div>
-                        <h3 class="th-single-achivement-title">Team Lead @ FinCrif India &bull; 2026</h3>
+                        <h3 class="th-single-achivement-title">Full Stack Team Lead @ FinCrif India &bull; 2026</h3>
+                        <p class="th-single-achivement-para">Leading the development of highly scalable microservices and APIs for real-time financial routing and multi-tenant applications using Laravel and Node.js.</p>
                     </div>
                     <!-- single iconbox -->
                     <div class="th-single-achivement" data-aos="fade-up">

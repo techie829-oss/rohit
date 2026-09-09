@@ -46,6 +46,10 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
 
     // Admin Blog CRUD
     Route::resource('blogs', BlogCrudController::class);
+
+    // Admin Subscribers
+    Route::get('/subscribers', [\App\Http\Controllers\Admin\SubscriberAdminController::class, 'index'])->name('subscribers.index');
+    Route::get('/subscribers/export', [\App\Http\Controllers\Admin\SubscriberAdminController::class, 'export'])->name('subscribers.export');
 });
 
 // Dynamic XML Sitemap for SEO & Generative AI Crawlers

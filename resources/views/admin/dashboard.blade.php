@@ -12,6 +12,7 @@
                 <h1 class="text-white fw-bold fs-2 mb-0">Welcome Back, {{ auth()->user()->name ?? 'Rohit' }}! 👋</h1>
             </div>
             <div class="d-flex gap-2">
+                <a href="{{ route('admin.subscribers.index') }}" class="btn btn-outline-warning rounded-pill px-4 fw-bold"><i class="fa-solid fa-users me-1"></i> Subscribers</a>
                 <a href="{{ route('admin.blogs.create') }}" class="btn btn-warning rounded-pill px-4 fw-bold text-dark"><i class="fa-solid fa-plus me-1"></i> Add New Blog</a>
                 <form action="{{ route('admin.logout') }}" method="POST" class="d-inline">
                     @csrf

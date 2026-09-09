@@ -77,7 +77,7 @@
 
 @push('scripts')
 <!-- TinyMCE CDN -->
-<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/5.10.7/tinymce.min.js" referrerpolicy="origin"></script>
 <script>
     tinymce.init({
         selector: '#content',

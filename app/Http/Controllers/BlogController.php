@@ -52,9 +52,12 @@ class BlogController extends Controller
             $blog = Blog::where('is_published', true)->latest('published_at')->firstOrFail();
         }
         
-        $blog->increment('views');
-
-        $trendingBlogs = Blog::where('is_published', true)->where('id', '!=', $blog->id)->orderByDesc('views')->take(4)->get();
+        if (\Illuminate\Support\Facades\Schema::hasColumn('blogs', 'views')) {
+            $blog->increment('views');
+            $trendingBlogs = Blog::where('is_published', true)->where('id', '!=', $blog->id)->orderByDesc('views')->take(4)->get();
+        } else {
+            $trendingBlogs = Blog::where('is_published', true)->where('id', '!=', $blog->id)->latest('published_at')->take(4)->get();
+        }
 
         return view('pages.blog-details', compact('blog', 'trendingBlogs'));
     }

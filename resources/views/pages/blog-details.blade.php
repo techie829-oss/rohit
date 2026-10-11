@@ -36,7 +36,7 @@
                     <div class="d-flex align-items-center gap-4 text-warning mb-4 fs-6">
                         <span><i class="fa-solid fa-user me-1"></i> {{ $blog->author }}</span>
                         <span><i class="fa-solid fa-calendar me-1"></i> {{ $blog->published_at ? $blog->published_at->format('M d, Y') : $blog->created_at->format('M d, Y') }}</span>
-                        <span><i class="fa-solid fa-eye me-1"></i> {{ number_format($blog->views) }} Views</span>
+                        <span><i class="fa-solid fa-eye me-1"></i> {{ number_format($blog->views ?? 0) }} Views</span>
                     </div>
                 </div>
 
@@ -90,7 +90,7 @@
                             <a href="{{ route('blog.show', $rec->slug) }}" class="text-warning text-decoration-none fw-bold fs-6 d-block mb-1">{{ $rec->title }}</a>
                             <div class="d-flex justify-content-between align-items-center text-secondary fs-6">
                                 <span><i class="fa-solid fa-calendar me-1"></i> {{ $rec->published_at ? $rec->published_at->format('M d, Y') : '' }}</span>
-                                <span><i class="fa-solid fa-eye me-1"></i> {{ number_format($rec->views) }}</span>
+                                <span><i class="fa-solid fa-eye me-1"></i> {{ number_format($rec->views ?? 0) }}</span>
                             </div>
                         </li>
                         @endforeach

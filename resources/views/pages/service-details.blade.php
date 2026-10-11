@@ -79,7 +79,8 @@
                         <li class="mb-3"><a href="https://sklops.com/" target="_blank" class="text-warning text-decoration-none fw-bold fs-6"><i class="fa-solid fa-graduation-cap me-2"></i> SKLOPS School ERP</a></li>
                         <li class="mb-3"><a href="https://vedantbilling.com/" target="_blank" class="text-warning text-decoration-none fw-bold fs-6"><i class="fa-solid fa-receipt me-2"></i> Vedant Billing POS ERP</a></li>
                         <li class="mb-3"><a href="https://send.solidrix.com/" target="_blank" class="text-warning text-decoration-none fw-bold fs-6"><i class="fa-solid fa-paper-plane me-2"></i> Solidrix Send Email Router</a></li>
-                        <li class="mb-3"><a href="https://smm.solidrix.com" target="_blank" class="text-warning text-decoration-none fw-bold fs-6"><i class="fa-solid fa-bolt me-2"></i> Solidrix SMM Panel</a></li>
+                        <li class="mb-3"><a href="https://dine.solidrix.com/" target="_blank" class="text-warning text-decoration-none fw-bold fs-6"><i class="fa-solid fa-utensils me-2"></i> Solidrix Dine Cloud POS</a></li>
+                        <li class="mb-3"><a href="https://whatsmeet.solidrix.com/" target="_blank" class="text-warning text-decoration-none fw-bold fs-6"><i class="fa-solid fa-comments me-2"></i> Solidrix WhatsMeet CRM</a></li>
                     </ul>
 
                     <a href="{{ route('contact') }}" class="th-primary-btn th-primary-btn-3 w-100 text-center">

@@ -527,6 +527,30 @@
                                                 </div>
                                             </a>
                                         </div>
+                                        <div class="swiper-slide">
+                                            <a href="https://dine.solidrix.com" target="_blank" class="d-block text-decoration-none">
+                                                <div class="th-slide-image p-relative">
+                                                    <img src="{{ asset('assets/img/projects/solidrix-dine.png') }}" alt="Solidrix Dine Cloud Restaurant POS">
+                                                    <!-- th-project content -->
+                                                    <div class="th-marketing-content">
+                                                        <p class="th-sutitle">Solidrix Dine &mdash; Restaurant Cloud POS</p>
+                                                        <h2 class="th-title">Interactive Table Management, Real-time KDS &amp; QR Ordering</h2>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="https://whatsmeet.solidrix.com" target="_blank" class="d-block text-decoration-none">
+                                                <div class="th-slide-image p-relative">
+                                                    <img src="{{ asset('assets/img/projects/solidrix-whatsmeet.png') }}" alt="Solidrix WhatsMeet WhatsApp CRM">
+                                                    <!-- th-project content -->
+                                                    <div class="th-marketing-content">
+                                                        <p class="th-sutitle">Solidrix WhatsMeet &mdash; Enterprise WhatsApp CRM</p>
+                                                        <h2 class="th-title">Omnichannel Team Inbox, Meta Cloud API &amp; Automation Flows</h2>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                     <div class="th-control-pagination th-control-dot-3">
                                         <div class="swiper-pagination"></div>

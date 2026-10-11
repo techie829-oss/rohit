@@ -227,16 +227,33 @@ Solidrix Send is a high-throughput, microservice-based email routing system buil
 
 ---
 
-### 6.5 Project 05: Meta WhatsApp Cloud API & Bot Engine
-- **Core Domain**: Enterprise Meta WhatsApp API Dispatcher, Automated Chatbots & Webhooks
+### 6.5 Project 05: Solidrix WhatsMeet — Enterprise WhatsApp CRM (whatsmeet.solidrix.com)
+- **Core Domain**: Enterprise Meta WhatsApp Cloud API v20, Omnichannel Team Inbox & Chatbot Automation Engine
+- **Live URL**: `https://whatsmeet.solidrix.com`
 
 #### Architectural Overview
-Engineered an enterprise WhatsApp automation platform utilizing official Meta Cloud API v18+. The engine processes incoming user messages via webhooks and routes responses using configurable state-machine logic.
+Architected an enterprise WhatsApp automation platform utilizing official Meta Cloud API v20. The engine processes incoming customer messages via high-throughput webhooks, manages multi-agent team inboxes, and routes automated responses using configurable state-machine logic.
 
 #### Key Features
-- **Official Meta Cloud API Integration**: Direct connection with Meta Graph API for template message broadcasting and interactive button messages.
-- **Automated Conversational Bots**: Tree-based chatbot flow builder for customer support, lead capture, and instant order tracking.
-- **Bulk Campaign Dispatcher**: Rate-limited bulk message dispatcher adhering to Meta tier constraints (1K, 10K, 100K messages/day).
+- **Official Meta Cloud API Integration**: Direct connection with Meta Graph API for template message broadcasting, interactive list messages, and media handling with verified WhatsApp Business account status.
+- **Multi-Agent Team Inbox**: Shared customer conversation thread allowing distributed support agents to claim, transfer, and reply with canned snippets.
+- **Automated Conversational Bots**: Visual drag-and-drop chatbot builder for lead qualification, FAQ routing, and booking confirmations.
+- **Bulk Campaign Dispatcher**: Rate-limited bulk message dispatcher adhering to Meta tier constraints (1K, 10K, 100K messages/day) backed by Redis queues.
+
+---
+
+### 6.6 Project 06: Solidrix Dine — Cloud Restaurant POS & QR Ordering (dine.solidrix.com)
+- **Core Domain**: Hospitality Cloud SaaS, Interactive Floor Mapping, Real-Time Kitchen Display System (KDS) & Contactless QR Ordering
+- **Live URL**: `https://dine.solidrix.com`
+
+#### Architectural Overview
+Engineered an end-to-end cloud-native restaurant operations suite utilizing React/Vite, Node.js/Express, and Socket.io for instantaneous bidirectional table-to-kitchen state synchronization.
+
+#### Key Features
+- **Interactive Floor & Table Manager**: Live visual table floor plan displaying real-time occupancy, reservation status, and active dining duration.
+- **Contactless QR Digital Ordering**: Dynamic table-specific QR code menu generation allowing guests to browse catalogs and order straight from mobile browsers.
+- **Real-Time Kitchen Display System (KDS)**: WebSockets-powered live Kitchen Order Ticket (KOT) board with color-coded preparation timers and acoustic alerts.
+- **High-Speed Billing & Thermal Printing**: Instant thermal bill printing via ESC/POS protocol, split-bill settlements, and multi-mode payment capture.
 
 ---
 

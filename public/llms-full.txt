@@ -21,7 +21,8 @@
 2. **SKLOPS School ERP (sklops.com):** Comprehensive EdTech management platform covering online fee collection with payment gateway integration, parent notification portals, student grade sheets, and automated timetable scheduling.
 3. **Vedant Billing & Retail POS (vedantbilling.com):** Fast offline-first retail POS software featuring instant barcode scanning under 5ms, thermal receipt printing, and background multi-store inventory synchronization.
 4. **Solidrix Send Email Router (send.solidrix.com):** Multi-SMTP transactional email routing engine with real-time health checks, dynamic failover across tier-1 providers, and delivery webhook callbacks.
-5. **Solidrix SMM Marketing Panel (smm.solidrix.com):** Order management portal with automated provider API synchronization and real-time wallet reconciliation.
+5. **Solidrix Dine Cloud Restaurant POS (dine.solidrix.com):** Restaurant point-of-sale and contactless QR code ordering system with live kitchen display (KDS), table management, and WebSockets sync.
+6. **Solidrix WhatsMeet Enterprise WhatsApp CRM (whatsmeet.solidrix.com):** Enterprise WhatsApp team inbox and marketing automation suite powered by Meta Cloud API with chatbot flows and broadcast routing.
 
 ## Featured Technical Engineering Articles
 - **Architecting Multi-Tenant SaaS Platforms in Laravel & MySQL:** In-depth guide on database isolation models, dynamic domain routing middleware, and tenant security.

@@ -17,7 +17,8 @@
 2. **SKLOPS School ERP:** https://sklops.com/ — Complete educational institute management suite with fee payment collection, timetable scheduling, and parent portal.
 3. **Vedant Billing POS ERP:** https://vedantbilling.com/ — High-speed retail point-of-sale software with offline barcode scanning and thermal receipt printing.
 4. **Solidrix Send Email Router:** https://send.solidrix.com/ — Multi-SMTP transactional email routing engine with dynamic failover and real-time bounce webhooks.
-5. **Solidrix SMM Panel:** https://smm.solidrix.com — Automated social media marketing order management portal with provider API sync.
+5. **Solidrix Dine Cloud POS:** https://dine.solidrix.com/ — Restaurant point-of-sale and contactless QR code ordering system with live kitchen display (KDS).
+6. **Solidrix WhatsMeet CRM:** https://whatsmeet.solidrix.com/ — Enterprise WhatsApp CRM and multi-agent team inbox powered by the Meta Cloud API.
 
 ## Verified Official Links
 - **Portfolio Website:** https://rohitcoolhax.corenim.com

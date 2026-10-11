@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Featured Enterprise Projects & SaaS Platforms - Rohit Kumar (Coolhax RK)')
-@section('meta_description', 'Explore live production enterprise SaaS platforms engineered by Rohit Kumar: Enterprise HRMS & Payroll, SKLOPS School ERP, Vedant Billing POS, Solidrix Send Email Router.')
+@section('meta_description', 'Explore live production enterprise SaaS platforms engineered by Rohit Kumar: Enterprise HRMS & Payroll, Solidrix Dine Cloud POS, Solidrix WhatsMeet WhatsApp CRM, SKLOPS School ERP, Vedant Billing POS, Solidrix Send.')
 
 @section('content')
 <!-- =========== breadcrumb area start =========== -->
@@ -31,7 +31,7 @@
                 <div class="th-section-title">
                     <p class="sub-title mb-16" data-aos="fade-up">{ PRODUCTION SaaS &amp; ENTERPRISE SYSTEMS }</p>
                     <h2 class="title text-anime-style-2">Architected &amp; Delivered For Scale</h2>
-                    <p class="th-para fs-5 text-light mt-3">From multi-tenant HRMS payroll engines to school management portals, retail POS systems, and transactional email routers — every platform is engineered with clean code, robust database architecture, and automated cloud DevOps.</p>
+                    <p class="th-para fs-5 text-light mt-3">From multi-tenant HRMS payroll engines and restaurant cloud POS to WhatsApp marketing CRMs, school portals, retail billing, and transactional email routers — every platform is engineered with clean code, robust database architecture, and automated cloud DevOps.</p>
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 text-center text-lg-end mt-4 mt-lg-0">
@@ -194,35 +194,76 @@
                 </div>
             </div>
 
-            <!-- Project 5: Solidrix SMM Panel -->
+            <!-- Project 5: Solidrix Dine Cloud POS & QR Ordering -->
             <div class="col-xl-6 col-lg-6 mb-30">
                 <div class="th-portfolio-card h-100 p-4 rounded-4 shadow-lg d-flex flex-column justify-content-between" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,123,0,0.3); transition: transform 0.3s ease;">
                     <div>
                         <div class="th-portfolio-card-thumb mb-4 rounded-4 overflow-hidden border border-secondary text-center" style="max-height: 320px;">
-                            <img class="w-100 h-100 rounded-4" src="{{ asset('assets/img/projects/solidrix-smm.png') }}" alt="Solidrix SMM Panel" style="object-fit: cover; object-position: top;">
+                            <img class="w-100 h-100 rounded-4" src="{{ asset('assets/img/projects/solidrix-dine.png') }}" alt="Solidrix Dine Cloud Restaurant POS" style="object-fit: cover; object-position: top;">
                         </div>
 
                         <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
-                            <span class="badge bg-warning text-dark px-3 py-2 fs-6 rounded-pill fw-bold">Digital Automation</span>
-                            <span class="text-warning fs-6"><i class="fa-solid fa-bolt me-1"></i> Automated API Dispatch</span>
+                            <span class="badge bg-warning text-dark px-3 py-2 fs-6 rounded-pill fw-bold">Hospitality Cloud SaaS</span>
+                            <span class="text-warning fs-6"><i class="fa-solid fa-utensils me-1"></i> Real-Time KDS &amp; QR Ordering</span>
                         </div>
 
                         <h3 class="th-title fs-3 fw-bold text-white mb-3">
-                            <a href="https://smm.solidrix.com" target="_blank" class="text-white text-decoration-none">Solidrix SMM Marketing Panel</a>
+                            <a href="https://dine.solidrix.com" target="_blank" class="text-white text-decoration-none">Solidrix Dine &mdash; Cloud Restaurant POS &amp; QR Ordering</a>
                         </h3>
-                        <p class="th-para text-light fs-6 mb-4">High-volume social media marketing order management portal with automated provider API synchronization, live order tracking, and instant payment reconciliation.</p>
+                        <p class="th-para text-light fs-6 mb-4">Complete modern restaurant operations suite featuring interactive floor &amp; table management, contactless QR code digital ordering, real-time Kitchen Order Ticket (KOT) sync via WebSockets, and high-speed billing.</p>
 
                         <div class="tech-stack-badges d-flex flex-wrap gap-2 mb-4">
-                            <span class="badge bg-dark text-warning border border-secondary px-2 py-1 fs-6">Laravel</span>
+                            <span class="badge bg-dark text-warning border border-secondary px-2 py-1 fs-6">React / Vite</span>
+                            <span class="badge bg-dark text-warning border border-secondary px-2 py-1 fs-6">Node.js</span>
+                            <span class="badge bg-dark text-warning border border-secondary px-2 py-1 fs-6">Socket.io</span>
+                            <span class="badge bg-dark text-warning border border-secondary px-2 py-1 fs-6">Tailwind CSS</span>
                             <span class="badge bg-dark text-warning border border-secondary px-2 py-1 fs-6">MySQL</span>
-                            <span class="badge bg-dark text-warning border border-secondary px-2 py-1 fs-6">REST API Sync</span>
-                            <span class="badge bg-dark text-warning border border-secondary px-2 py-1 fs-6">Cron Jobs</span>
+                            <span class="badge bg-dark text-warning border border-secondary px-2 py-1 fs-6">Docker</span>
                         </div>
                     </div>
 
                     <div class="d-flex align-items-center justify-content-between pt-3 border-top border-secondary">
-                        <a href="https://smm.solidrix.com" target="_blank" class="btn btn-warning text-dark fw-bold rounded-pill px-4">
-                            Visit Live Panel <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+                        <a href="https://dine.solidrix.com" target="_blank" class="btn btn-warning text-dark fw-bold rounded-pill px-4">
+                            Visit Live Platform <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+                        </a>
+                        <a href="{{ route('projects.details') }}" class="text-warning text-decoration-none fw-bold">
+                            Case Study <i class="fa-solid fa-chevron-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6: Solidrix WhatsMeet WhatsApp CRM -->
+            <div class="col-xl-6 col-lg-6 mb-30">
+                <div class="th-portfolio-card h-100 p-4 rounded-4 shadow-lg d-flex flex-column justify-content-between" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,123,0,0.3); transition: transform 0.3s ease;">
+                    <div>
+                        <div class="th-portfolio-card-thumb mb-4 rounded-4 overflow-hidden border border-secondary text-center" style="max-height: 320px;">
+                            <img class="w-100 h-100 rounded-4" src="{{ asset('assets/img/projects/solidrix-whatsmeet.png') }}" alt="Solidrix WhatsMeet WhatsApp CRM" style="object-fit: cover; object-position: top;">
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+                            <span class="badge bg-warning text-dark px-3 py-2 fs-6 rounded-pill fw-bold">Conversational CRM</span>
+                            <span class="text-warning fs-6"><i class="fa-brands fa-whatsapp me-1"></i> Meta Cloud API v20</span>
+                        </div>
+
+                        <h3 class="th-title fs-3 fw-bold text-white mb-3">
+                            <a href="https://whatsmeet.solidrix.com" target="_blank" class="text-white text-decoration-none">Solidrix WhatsMeet &mdash; Enterprise WhatsApp CRM</a>
+                        </h3>
+                        <p class="th-para text-light fs-6 mb-4">Enterprise WhatsApp sales and marketing suite powered by Meta Cloud API: multi-agent shared team inbox, visual drag-and-drop chatbot automations, bulk broadcast campaigns, and real-time webhook ingestion.</p>
+
+                        <div class="tech-stack-badges d-flex flex-wrap gap-2 mb-4">
+                            <span class="badge bg-dark text-warning border border-secondary px-2 py-1 fs-6">Laravel 11</span>
+                            <span class="badge bg-dark text-warning border border-secondary px-2 py-1 fs-6">Meta Graph API</span>
+                            <span class="badge bg-dark text-warning border border-secondary px-2 py-1 fs-6">Redis Queues</span>
+                            <span class="badge bg-dark text-warning border border-secondary px-2 py-1 fs-6">MySQL</span>
+                            <span class="badge bg-dark text-warning border border-secondary px-2 py-1 fs-6">WebSockets</span>
+                            <span class="badge bg-dark text-warning border border-secondary px-2 py-1 fs-6">Tailwind CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-between pt-3 border-top border-secondary">
+                        <a href="https://whatsmeet.solidrix.com" target="_blank" class="btn btn-warning text-dark fw-bold rounded-pill px-4">
+                            Visit Live CRM <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
                         </a>
                         <a href="{{ route('projects.details') }}" class="text-warning text-decoration-none fw-bold">
                             Case Study <i class="fa-solid fa-chevron-right ms-1"></i>

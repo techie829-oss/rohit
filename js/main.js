@@ -252,6 +252,62 @@ document.addEventListener('DOMContentLoaded', () => {
       ],
       result: 'Delivered a complete EdTech web platform that presents courses and coaching services professionally with clear information architecture and effective enrollment pathways for prospective students.',
       liveUrl: '#'
+    },
+
+    'solidrix-dine': {
+      num: '07',
+      category: 'Hospitality SaaS / Cloud POS',
+      title: 'Solidrix Dine — Restaurant Cloud POS & QR Ordering',
+      overview: 'Full-featured restaurant management and cloud POS ecosystem featuring interactive floor & table mapping, instant QR contactless digital menu ordering, real-time Kitchen Order Ticket (KOT) sync via WebSockets, and automated high-speed billing.',
+      challenge: 'High-pace restaurants experience severe order latency and miscommunication between floor captains, kitchen staff, and billing counters during peak hours. Traditional offline POS software lacks real-time multi-terminal synchronization.',
+      solution: 'Engineered a modern web-based POS and ordering architecture using React/Vite, Node.js, and Socket.io for instantaneous bidirectional table-to-kitchen state sync. Built contactless QR table ordering allowing customers to browse digital menus and order directly.',
+      contribution: [
+        'Full-stack architecture with React, Node.js, and Express',
+        'Real-time WebSocket engine for instant KOT sync across kitchen screens',
+        'Interactive floor and table layout visual manager',
+        'Dynamic contactless QR code menu generation and digital cart',
+        'Thermal printer integration (ESC/POS) for instant kitchen tickets and receipts',
+        'Docker containerization and Nginx reverse proxy deployment'
+      ],
+      tech: ['React', 'Node.js', 'Socket.io', 'Tailwind CSS', 'MySQL', 'Docker', 'Nginx'],
+      features: [
+        'Live interactive table grid and occupancy tracking',
+        'Real-time Kitchen Display System (KDS) & KOT status',
+        'Contactless QR code customer digital ordering',
+        'High-speed POS billing and split-bill payments',
+        'Menu catalog, category, and modifier management',
+        'Live sales, revenue analytics, and daily business reports'
+      ],
+      result: 'Delivered a resilient, real-time restaurant POS and QR ordering platform that cuts order-to-kitchen latency to sub-second speeds, enhances dining turnaround time, and provides seamless multi-device operational control.',
+      liveUrl: 'https://dine.solidrix.com'
+    },
+
+    'whatsmeet': {
+      num: '08',
+      category: 'Conversational CRM / Automation',
+      title: 'Solidrix WhatsMeet — Enterprise WhatsApp CRM',
+      overview: 'Omnichannel WhatsApp CRM and customer engagement platform built on Meta Cloud API, featuring multi-agent shared team inbox, visual chatbot automation flows, bulk broadcast campaign dispatch with rate limiting, and real-time webhook ingestion.',
+      challenge: 'Managing high-volume customer inquiries across distributed teams leads to missed leads and delayed responses. Businesses require a centralized WhatsApp engine that routes messages to agents, automates FAQs, and sends compliant broadcasts without getting banned.',
+      solution: 'Architected an enterprise WhatsApp automation platform using Laravel 11 and Meta Cloud API v20. Integrated Redis queues for resilient message ingestion, visual condition-based bot workflows, and multi-tenant agent permissions.',
+      contribution: [
+        'Backend engineering using Laravel 11 and MySQL',
+        'Meta Cloud API v20 integration (Templates, Media, Interactive Buttons)',
+        'Asynchronous webhook receiver with Redis queue workers',
+        'Shared team inbox with live agent typing and message status updates',
+        'Visual chatbot flow builder with conditional routing',
+        'Bulk marketing broadcast campaign scheduler with throttle safety'
+      ],
+      tech: ['Laravel 11', 'Meta Cloud API', 'Redis', 'MySQL', 'WebSockets', 'Tailwind CSS', 'Docker'],
+      features: [
+        'Multi-agent shared WhatsApp team inbox',
+        'Official Meta Cloud API verified green badge integration',
+        'Visual drag-and-drop chatbot automation flow builder',
+        'High-volume broadcast campaign scheduler with analytics',
+        'Contact tagging, custom fields, and audience segmentation',
+        'Real-time delivery, read receipt, and failure tracking'
+      ],
+      result: 'Engineered a scalable WhatsApp CRM that handles thousands of daily messages seamlessly, achieves 98%+ broadcast open rates, and automates 60%+ of routine customer inquiries.',
+      liveUrl: 'https://whatsmeet.solidrix.com'
     }
   };
 
